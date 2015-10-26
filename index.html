@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Knockout</title>
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body>
-        <script src="js/jquery-1.6.2.min.js"></script>
-        <script src="js/jquery.tmpl.js"></script>
-        <script src="js/knockout-1.2.1.js"></script>
-        <script src="js/behavior.js"></script>
-    </body>
+<html lang="en">
+<head>
+  <title>Simple data bind</title>
+  <script src="knockout-3.3.0.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Simple data bind</h1>
+    <p>Hello, <span data-bind="text: name"></span>!</p>
+    <p>First name: <strong data-bind="text: firstName"></strong></p>
+    <p>Last name: <strong data-bind="text: lastName"></strong></p>
+    <p><span data-bind="text: count"></span> times.</p>
+    <input type="button" class="btn" value="Click Me" data-bind="click: increment" /> 
+
+  <script src="behavior.js"></script>
+  </div>
+</body>
 </html>
